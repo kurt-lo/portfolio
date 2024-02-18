@@ -10,14 +10,19 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { BsFiletypeJson } from "react-icons/bs";
 import { SiDaisyui } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { SiNumpy } from "react-icons/si";
 import instantMernNoodles from '../../assets/images/instantmernnoodles.png'
 import bookSwift from '../../assets/images/bookswift.png'
 import blogr from '../../assets/images/blogr.png'
+import futurevault from '../../assets/images/futurevault.png'
+import navigation from '../../assets/images/navigation.png'
+import carsApi from '../../assets/images/cars-api.png'
 
 const ProjectCard = () => {
     return (
-        <>
-            <div className="card w-96 glass">
+        <div className="flex flex-wrap justify-center gap-[2rem]">
+            <div className="card w-80 sm:w-96 glass">
                 <figure>
                     <img src={instantMernNoodles} alt="Homepage of InstantMernNoodles" />
                 </figure>
@@ -38,7 +43,7 @@ const ProjectCard = () => {
                 </Card>
             </div>
 
-            <div className="card w-96 glass">
+            <div className="card w-80 sm:w-96 glass">
                 <figure>
                     <img src={bookSwift} alt="Homepage of bookSwift" />
                 </figure>
@@ -59,7 +64,7 @@ const ProjectCard = () => {
                 </Card>
             </div>
 
-            <div className="card w-96 glass">
+            <div className="card w-80 sm:w-96 glass">
                 <figure>
                     <img src={blogr} alt="Homepage of blogr" />
                 </figure>
@@ -72,10 +77,76 @@ const ProjectCard = () => {
                     live='Live'
                     liveLink='https://blogr-snowy.vercel.app/'
                     liveIcon={<IoGlobeSharp size={20} />}
-                />
-
+                >
+                    <>
+                        <SiNextdotjs size={20} className="text-secondary" />
+                        <SiTailwindcss size={20} className="text-secondary" />
+                        <SiTypescript size={20} className="text-secondary" />
+                    </>
+                </Card>
             </div>
-        </>
+
+            <div className="card w-80 sm:w-96 glass">
+                <figure>
+                    <img src={futurevault} alt="Overview of futurevault" />
+                </figure>
+                <Card
+                    cardTitle='Future Vault'
+                    description='A desktop application that predict number of student enrollment based on historical data.'
+                    code='Code'
+                    githubLink='https://github.com/kurt-lo/futurevault'
+                    githubIcon={<FaGithub size={20} />}
+                >
+                    <>
+                        <FaPython size={20} className="text-secondary" />
+                        <SiNumpy size={20} className="text-secondary" />
+                    </>
+                </Card>
+            </div>
+
+            <div className="card w-80 sm:w-96 glass">
+                <figure>
+                    <img src={navigation} alt="Landing page of Navigation" />
+                </figure>
+                <Card
+                    cardTitle='Navigation'
+                    description='Created a landing page, showing my abilities in making websites look good and work well.'
+                    code='Code'
+                    githubLink='https://github.com/kurt-lo/navigation'
+                    githubIcon={<FaGithub size={20} />}
+                    live='Live'
+                    liveLink='https://navigation-one-nu.vercel.app/'
+                    liveIcon={<IoGlobeSharp size={20} />}
+                >
+                    <>
+                        <SiNextdotjs size={20} className="text-secondary" />
+                        <SiTailwindcss size={20} className="text-secondary" />
+                        <SiTypescript size={20} className="text-secondary" />
+                    </>
+                </Card>
+            </div>
+
+            <div className="card w-80 sm:w-96 glass">
+                <figure>
+                    <img src={carsApi} alt="Landing page of carsApi" />
+                </figure>
+                <Card
+                    cardTitle='Cars API'
+                    description='Developed and deployed an interactive website for exploring car-related data, showcasing proficiency in API integration.'
+                    code='Code'
+                    githubLink='https://github.com/kurt-lo/cars-api'
+                    githubIcon={<FaGithub size={20} />}
+                    live='Live'
+                    liveLink='https://cars-api-sigma.vercel.app/'
+                    liveIcon={<IoGlobeSharp size={20} />}
+                >
+                    <>
+                        <FaReact size={20} className="text-secondary" />
+                        <SiTailwindcss size={20} className="text-secondary" />
+                    </>
+                </Card>
+            </div>
+        </div>
     )
 }
 
