@@ -24,7 +24,7 @@ const ProjectCard = () => {
         <div className="flex flex-wrap justify-center gap-[2rem]">
             <div className="card w-80 sm:w-96 glass">
                 <figure>
-                    <img src={instantMernNoodles} alt="Homepage of InstantMernNoodles" />
+                    <img src={instantMernNoodles} alt="Homepage of InstantMernNoodles" className="hover:scale-150 ease-in-out duration-500" />
                 </figure>
                 <Card
                     cardTitle='Instant Mern Noodles'
@@ -45,7 +45,7 @@ const ProjectCard = () => {
 
             <div className="card w-80 sm:w-96 glass">
                 <figure>
-                    <img src={bookSwift} alt="Homepage of bookSwift" />
+                    <img src={bookSwift} alt="Homepage of bookSwift" className="hover:scale-150 ease-in-out duration-500" />
                 </figure>
                 <Card
                     cardTitle='BookSwift'
@@ -66,7 +66,7 @@ const ProjectCard = () => {
 
             <div className="card w-80 sm:w-96 glass">
                 <figure>
-                    <img src={blogr} alt="Homepage of blogr" />
+                    <img src={blogr} alt="Homepage of blogr" className="hover:scale-150 ease-in-out duration-500" />
                 </figure>
                 <Card
                     cardTitle='Blogr'
@@ -88,7 +88,7 @@ const ProjectCard = () => {
 
             <div className="card w-80 sm:w-96 glass">
                 <figure>
-                    <img src={futurevault} alt="Overview of futurevault" />
+                    <img src={futurevault} alt="Overview of futurevault" className="hover:scale-150 ease-in-out duration-500" />
                 </figure>
                 <Card
                     cardTitle='Future Vault'
@@ -106,7 +106,7 @@ const ProjectCard = () => {
 
             <div className="card w-80 sm:w-96 glass">
                 <figure>
-                    <img src={navigation} alt="Landing page of Navigation" />
+                    <img src={navigation} alt="Landing page of Navigation" className="hover:scale-150 ease-in-out duration-500" />
                 </figure>
                 <Card
                     cardTitle='Navigation'
@@ -128,7 +128,7 @@ const ProjectCard = () => {
 
             <div className="card w-80 sm:w-96 glass">
                 <figure>
-                    <img src={carsApi} alt="Landing page of carsApi" />
+                    <img src={carsApi} alt="Landing page of carsApi" className="hover:scale-150 ease-in-out duration-500" />
                 </figure>
                 <Card
                     cardTitle='Cars API'

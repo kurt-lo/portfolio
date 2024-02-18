@@ -17,6 +17,9 @@ const Navbar = ({ toggled }) => {
                         <a href="#projects" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">Projects</a>
                     </li>
                     <li>
+                        <a href="#skills" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">Skills</a>
+                    </li>
+                    <li>
                         <a href="#contact" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">Contact</a>
                     </li>
                 </ul>
