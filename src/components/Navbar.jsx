@@ -2,7 +2,7 @@ const Navbar = ({ toggled }) => {
     return (
         <>
             <nav className={`
-                absolute top-[100%] w-[80%] left-[50%] translate-x-[-50%] py-[.5rem] bg-primary-content rounded-lg shadow-2xl
+                absolute top-[100%] w-[80%] left-[50%] translate-x-[-50%] py-[.5rem] bg-base-100 rounded-lg shadow-2xl
                 ${toggled ? "block" : "hidden"}  
                 md:static md:w-auto md:text-left md:flex md:gap-[1rem] md:py-0 md:bg-transparent md:left-[0] md:translate-x-[0] md:shadow-none
             `}>
