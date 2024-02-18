@@ -12,7 +12,7 @@ const Header = () => {
         <>
             <div className="navbar fixed w-full top-0 z-10 justify-between items-center bg-base-100 p-[1rem]">
                 <div>
-                    <a href="#home" className="btn btn-ghost text-xl font-[700]">Russel Kurt</a>
+                    <a href="#home" className="btn btn-ghost text-xl font-[700]">Russel Kurt.</a>
                 </div>
                 <Navbar toggled={toggleMenu} />
                 <label className='md:hidden relative btn btn-circle swap swap-rotate'>
