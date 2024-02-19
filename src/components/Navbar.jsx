@@ -19,9 +19,6 @@ const Navbar = ({ toggled }) => {
                     <li>
                         <a href="#skills" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">Skills</a>
                     </li>
-                    <li>
-                        <a href="#contact" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">Contact</a>
-                    </li>
                 </ul>
                 <div className="flex justify-center md:flex-none md:justify-start pb-[.5rem] md:pb-0">
                     <label className="swap swap-rotate">

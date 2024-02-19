@@ -1,6 +1,7 @@
 import profileImage from '../assets/images/profile.jpg';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { MdWavingHand } from "react-icons/md";
 import Button from './Button';
 
@@ -25,13 +26,16 @@ const Hero = () => {
             <ul className='flex justify-center lg:justify-start gap-[1rem] pb-[1.5rem]'>
               <li>
                 <a href="https://github.com/kurt-lo" target='_blank'>
-                  <FaGithub size={50} />
+                  <FaGithub size={37} />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/kurtlo/" target='_blank'>
-                  <FaLinkedin size={50} />
+                  <FaLinkedin size={37} />
                 </a>
+              </li>
+              <li>
+                <a href="mailto:kurtlonolasco@gmail.com"><SiGmail size={37} /></a>
               </li>
             </ul>
             <div>
