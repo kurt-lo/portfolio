@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import gif from '../assets/images/giphy.gif';
-import cv from '../assets/cv/CV_Russel_Kurt_Nolasco.pdf';
+import cv from '../assets/cv/Russel_Kurt_Nolasco.pdf';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
