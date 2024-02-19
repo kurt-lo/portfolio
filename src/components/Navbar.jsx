@@ -1,27 +1,41 @@
-const Navbar = ({ toggled }) => {
+import { ImHome } from "react-icons/im";
+import { FaUserAlt } from "react-icons/fa";
+import { FaList } from "react-icons/fa";
+import { FaPenToSquare } from "react-icons/fa6";
+
+const Navbar = () => {
+
+    const navLinksClass = "btn btn-ghost flex flex-col items-center gap-1 px-[.5rem] sm:px-[1rem]";
+    // <a href="#about" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">About Me</a>
+
     return (
-        <>
+        <div className="navbar fixed backdrop-blur-lg bg-white/30 w-auto top-[1%] left-[50%] -translate-x-[50%] z-10 justify-center text-primary px-[5%] rounded-[100px]">
             <nav className={`
-                absolute top-[100%] w-[80%] left-[50%] translate-x-[-50%] py-[.5rem] bg-base-100 rounded-lg shadow-2xl
-                ${toggled ? "block" : "hidden"}  
-                md:static md:w-auto md:text-left md:flex md:gap-[1rem] md:py-0 md:bg-transparent md:left-[0] md:translate-x-[0] md:shadow-none
             `}>
-                <ul className="md:flex md:gap-[1rem] text-center">
+                <ul className="flex text-center">
                     <li>
-                        <a href="#home" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">Home</a>
+                        <a href="#home" className="btn btn-ghost flex flex-col items-center gap-1 px-[.5rem] sm:px-[1rem]">
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#about" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">About Me</a>
+                        <a href="#about" className={navLinksClass}>
+                            <span>About</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#projects" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">Projects</a>
+                        <a href="#projects" className={navLinksClass}>
+                            <span>Projects</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#skills" className="btn btn-ghost py-[.5rem] px-[1rem] rounded-md text-base font-[700]">Skills</a>
+                        <a href="#skills" className={navLinksClass}>
+                            <span>Skills</span>
+                        </a>
                     </li>
                 </ul>
-                <div className="flex justify-center md:flex-none md:justify-start pb-[.5rem] md:pb-0">
-                    <label className="swap swap-rotate">
+                <div className="flex">
+                    <label className="swap swap-rotate sm:ml-[1rem] ml-[.5rem]">
                         {/* this hidden checkbox controls the state */}
                         <input type="checkbox" className="theme-controller text-xl" value="autumn" />
                         {/* sun icon */}
@@ -31,7 +45,7 @@ const Navbar = ({ toggled }) => {
                     </label>
                 </div>
             </nav>
-        </>
+        </div>
     )
 }
 

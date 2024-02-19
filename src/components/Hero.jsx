@@ -3,7 +3,6 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { MdWavingHand } from "react-icons/md";
-import Button from './Button';
 
 const Hero = () => {
   return (
@@ -16,7 +15,9 @@ const Hero = () => {
             alt='A boy sitting on a chair'
           />
           <div className='text-center lg:text-left'>
-            <p className='flex justify-center lg:justify-start items-center gap-[.5rem]'>Hello, I&apos;m <MdWavingHand size={25} className='text-primary' /></p>
+            <span className='flex justify-center lg:justify-start items-center gap-[.5rem]'><span>Hello, I&apos;m</span>
+              <MdWavingHand size={25} className='text-primary animate-wave' />
+            </span>
             <h1 className="text-3xl sm:text-5xl font-bold">
               Russel Kurt Nolasco.
             </h1>
@@ -39,7 +40,13 @@ const Hero = () => {
               </li>
             </ul>
             <div>
-              <Button className='font-[700]'>FIND OUT MORE</Button>
+              <a
+                href="https://github.com/kurt-lo/CV/blob/main/Resume%20-%20Russel%20Kurt%20Nolasco.pdf"
+                target='_blank'
+                className="btn btn-primary font-[700] font-mono"
+              >
+                FIND OUT MORE
+              </a>
             </div>
           </div>
         </div>

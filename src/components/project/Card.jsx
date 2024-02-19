@@ -7,11 +7,11 @@ const Card = ({ cardTitle, description, code, githubLink, githubIcon, live, live
                 {children}
             </div>
             <div className="card-actions justify-end pt-[.5rem]">
-                <a href={githubLink} target="_blank" className="flex items-center gap-[.3rem]">
+                <a href={githubLink} target="_blank" className="flex items-center gap-[.3rem] hover:text-secondary duration-500">
                     <span className="font-[500]">{code}</span>
                     {githubIcon}
                 </a>
-                <a href={liveLink} target="_blank" className="flex items-center gap-[.3rem]">
+                <a href={liveLink} target="_blank" className="flex items-center gap-[.3rem] hover:text-secondary duration-500">
                     <span className="font-[500]">{live}</span>
                     {liveIcon}
                 </a>

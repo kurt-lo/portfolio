@@ -12,14 +12,25 @@ import { BsFiletypeJson } from "react-icons/bs";
 import { SiDaisyui } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { SiNumpy } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { BsFiletypeCss } from "react-icons/bs";
+import { SiJquery } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa6";
+import { SiPhp } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
 import instantMernNoodles from '../../assets/images/instantmernnoodles.png'
 import bookSwift from '../../assets/images/bookswift.png'
 import blogr from '../../assets/images/blogr.png'
 import futurevault from '../../assets/images/futurevault.png'
 import navigation from '../../assets/images/navigation.png'
 import carsApi from '../../assets/images/cars-api.png'
+import nulqueue from '../../assets/images/nulqueue.png'
 
 const ProjectCard = () => {
+
+    const iconClass = 'text-secondary hover:-translate-y-1 duration-[400ms] cursor-grab';
+
     return (
         <div className="flex flex-wrap justify-center gap-[2rem]">
             <div className="card w-80 sm:w-96 glass">
@@ -34,11 +45,11 @@ const ProjectCard = () => {
                     githubIcon={<FaGithub size={20} />}
                 >
                     <>
-                        <FaReact size={20} className="text-secondary" />
-                        <FaNodeJs size={20} className="text-secondary" />
-                        <SiExpress size={20} className="text-secondary" />
-                        <DiMongodb size={20} className="text-secondary" />
-                        <SiTailwindcss size={20} className="text-secondary" />
+                        <FaReact size={20} className={iconClass} />
+                        <FaNodeJs size={20} className={iconClass} />
+                        <SiExpress size={20} className={iconClass} />
+                        <DiMongodb size={20} className={iconClass} />
+                        <SiTailwindcss size={20} className={iconClass} />
                     </>
                 </Card>
             </div>
@@ -55,11 +66,11 @@ const ProjectCard = () => {
                     githubIcon={<FaGithub size={20} />}
                 >
                     <>
-                        <SiNextdotjs size={20} className="text-secondary" />
-                        <SiTailwindcss size={20} className="text-secondary" />
-                        <SiTypescript size={20} className="text-secondary" />
-                        <BsFiletypeJson size={20} className="text-secondary" />
-                        <SiDaisyui size={20} className="text-secondary" />
+                        <SiNextdotjs size={20} className={iconClass} />
+                        <SiTailwindcss size={20} className={iconClass} />
+                        <SiTypescript size={20} className={iconClass} />
+                        <BsFiletypeJson size={20} className={iconClass} />
+                        <SiDaisyui size={20} className={iconClass} />
                     </>
                 </Card>
             </div>
@@ -79,9 +90,9 @@ const ProjectCard = () => {
                     liveIcon={<IoGlobeSharp size={20} />}
                 >
                     <>
-                        <SiNextdotjs size={20} className="text-secondary" />
-                        <SiTailwindcss size={20} className="text-secondary" />
-                        <SiTypescript size={20} className="text-secondary" />
+                        <SiNextdotjs size={20} className={iconClass} />
+                        <SiTailwindcss size={20} className={iconClass} />
+                        <SiTypescript size={20} className={iconClass} />
                     </>
                 </Card>
             </div>
@@ -98,8 +109,31 @@ const ProjectCard = () => {
                     githubIcon={<FaGithub size={20} />}
                 >
                     <>
-                        <FaPython size={20} className="text-secondary" />
-                        <SiNumpy size={20} className="text-secondary" />
+                        <FaPython size={20} className={iconClass} />
+                        <SiNumpy size={20} className={iconClass} />
+                    </>
+                </Card>
+            </div>
+
+            <div className="card w-80 sm:w-96 glass">
+                <figure>
+                    <img src={nulqueue} alt="Landing page of Navigation" className="hover:scale-150 ease-in-out duration-500" />
+                </figure>
+                <Card
+                    cardTitle='Queueing Management System'
+                    description='Developed a queue management system for NU Laguna campus'
+                    code='Code'
+                    githubLink='https://github.com/kurt-lo/NUL-QUEUE'
+                    githubIcon={<FaGithub size={20} />}
+                >
+                    <>
+                        <FaHtml5 size={20} className={iconClass} />
+                        <BsFiletypeCss size={20} className={iconClass} />
+                        <IoLogoJavascript size={20} className={iconClass} />
+                        <SiPhp size={20} className={iconClass} />
+                        <SiJquery size={20} className={iconClass} />
+                        <FaBootstrap size={20} className={iconClass} />
+                        <SiMysql size={20} className={iconClass} />
                     </>
                 </Card>
             </div>
@@ -119,9 +153,9 @@ const ProjectCard = () => {
                     liveIcon={<IoGlobeSharp size={20} />}
                 >
                     <>
-                        <SiNextdotjs size={20} className="text-secondary" />
-                        <SiTailwindcss size={20} className="text-secondary" />
-                        <SiTypescript size={20} className="text-secondary" />
+                        <SiNextdotjs size={20} className={iconClass} />
+                        <SiTailwindcss size={20} className={iconClass} />
+                        <SiTypescript size={20} className={iconClass} />
                     </>
                 </Card>
             </div>
@@ -141,8 +175,8 @@ const ProjectCard = () => {
                     liveIcon={<IoGlobeSharp size={20} />}
                 >
                     <>
-                        <FaReact size={20} className="text-secondary" />
-                        <SiTailwindcss size={20} className="text-secondary" />
+                        <FaReact size={20} className={iconClass} />
+                        <SiTailwindcss size={20} className={iconClass} />
                     </>
                 </Card>
             </div>
