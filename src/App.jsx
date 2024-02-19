@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <motion.div
-        className="fixed left-0 right-0 bottom-0 bg-secondary h-1"
+        className="fixed left-0 right-0 top-0 bg-secondary h-1 z-10"
         style={{ scaleX: scrollYProgress }}
       />
       <Navbar />
