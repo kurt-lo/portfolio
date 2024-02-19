@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profileImage from '../assets/images/profile.jpg';
+import gif from '../assets/images/giphy.gif';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -16,7 +16,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <img
-              src={profileImage}
+              src={gif}
               className="max-w-[15rem] lg:max-w-[25rem] rounded-2xl shadow-2xl"
               alt='A boy sitting on a chair'
             />
@@ -36,7 +36,7 @@ const Hero = () => {
               <p className="py-6">
                 An aspiring web developer. Dedicated to continuous learning growing in the tech field.
               </p>
-              <ul className='flex justify-center lg:justify-start gap-[1rem] pb-[1.5rem]'>
+              <ul className='flex justify-center lg:justify-start gap-[.7rem] pb-[1.5rem]'>
                 <li>
                   <a href="https://github.com/kurt-lo" target='_blank'>
                     <FaGithub size={37} />

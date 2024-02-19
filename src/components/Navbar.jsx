@@ -1,6 +1,6 @@
 const Navbar = () => {
 
-    const navLinksClass = "btn btn-ghost flex flex-col items-center gap-1 px-[.5rem] sm:px-[1rem] hover:underline focus:underline active:underline";
+    const navLinksClass = "btn btn-ghost flex flex-col items-center gap-1 px-[.5rem] sm:px-[1rem]";
 
     return (
         <div className="navbar fixed backdrop-blur-lg bg-white/30 w-auto top-[1%] left-[50%] -translate-x-[50%] z-10 justify-center text-primary px-[5%] py-0 min-h-0 rounded-[100px]">
