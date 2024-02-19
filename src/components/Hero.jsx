@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import gif from '../assets/images/giphy.gif';
+import cv from '../assets/cv/CV_Russel_Kurt_Nolasco.pdf';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -53,8 +54,8 @@ const Hero = () => {
               </ul>
               <div>
                 <a
-                  href="https://github.com/kurt-lo/CV/blob/main/Resume%20-%20Russel%20Kurt%20Nolasco.pdf"
-                  target='_blank'
+                  href={cv}
+                  download
                   className="btn btn-primary font-[700] font-mono"
                 >
                   FIND OUT MORE
