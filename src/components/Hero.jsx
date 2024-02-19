@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import profileImage from '../assets/images/profile.jpg';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -9,12 +10,22 @@ const Hero = () => {
     <main id="home">
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content pt-[4rem] lg:pt-0 gap-[4rem] flex-col lg:flex-row-reverse">
-
+          <motion.div
+            initial={{ opacity: 0, x: 25 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
             <img
               src={profileImage}
               className="max-w-[15rem] lg:max-w-[25rem] rounded-2xl shadow-2xl"
               alt='A boy sitting on a chair'
             />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -25 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
             <div className='text-center lg:text-left'>
               <span className='flex justify-center lg:justify-start items-center gap-[.5rem]'><span>Hello, I&apos;m</span>
                 <MdWavingHand size={25} className='text-primary animate-wave' />
@@ -50,6 +61,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
+          </motion.div>
         </div>
       </div>
     </main>
