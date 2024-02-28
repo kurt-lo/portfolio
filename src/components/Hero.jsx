@@ -54,6 +54,7 @@ const Hero = () => {
               </ul>
               <div>
                 <a
+                  id="cv"
                   href={cv}
                   download
                   className="btn btn-primary font-[700] font-mono"
