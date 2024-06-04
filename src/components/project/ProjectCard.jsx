@@ -19,6 +19,7 @@ import { SiJquery } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa6";
 import { SiPhp } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import { FaVideo } from "react-icons/fa";
 import instantMernNoodles from '../../assets/images/instantmernnoodles.png'
 import bookSwift from '../../assets/images/bookswift.png'
 import blogr from '../../assets/images/blogr.png'
@@ -26,6 +27,8 @@ import futurevault from '../../assets/images/futurevault.png'
 import navigation from '../../assets/images/navigation.png'
 import carsApi from '../../assets/images/cars-api.png'
 import nulqueue from '../../assets/images/nulqueue.png'
+import zoomy from '../../assets/images/zoomy.png'
+import reactYt from '../../assets/images/react-youtube.png'
 
 const ProjectCard = () => {
 
@@ -43,12 +46,64 @@ const ProjectCard = () => {
                     code='Code'
                     githubLink='https://github.com/kurt-lo/instantmern-noodles'
                     githubIcon={<FaGithub size={20} />}
+                    videoDemo='Demo'
+                    videoDemoLink='https://drive.google.com/file/d/1f5PExk3A1_aCT9C_Kxk32gK2SgKjVTSF/view'
+                    videoDemoIcon={<FaVideo  size={20} />}
                 >
                     <>
                         <FaReact size={20} className={iconClass} />
                         <FaNodeJs size={20} className={iconClass} />
                         <SiExpress size={20} className={iconClass} />
                         <DiMongodb size={20} className={iconClass} />
+                        <SiTailwindcss size={20} className={iconClass} />
+                    </>
+                </Card>
+            </div>
+
+            <div className="card w-80 sm:w-96 glass">
+                <figure>
+                    <img src={zoomy} alt="Homepage of Zoomy" className="hover:scale-150 ease-in-out duration-500" />
+                </figure>
+                <Card
+                    cardTitle='Zoomy'
+                    description='A video conference call.'
+                    code='Code'
+                    githubLink='https://github.com/kurt-lo/Zoomy'
+                    githubIcon={<FaGithub size={20} />}
+                    live='Live'
+                    liveLink='https://zoomy-gray.vercel.app/'
+                    liveIcon={<IoGlobeSharp size={20} />}
+                    videoDemo='Demo'
+                    videoDemoLink='https://www.youtube.com/watch?v=ue3OmChzzIM'
+                    videoDemoIcon={<FaVideo  size={20} />}
+                >
+                    <>
+                        <SiNextdotjs size={20} className={iconClass} />
+                        {/* <SiClerk size={20} className={iconClass} /> */}
+                        <SiTailwindcss size={20} className={iconClass} />
+                    </>
+                </Card>
+            </div>
+
+            <div className="card w-80 sm:w-96 glass">
+                <figure>
+                    <img src={reactYt} alt="Homepage of Youtube Clone" className="hover:scale-150 ease-in-out duration-500" />
+                </figure>
+                <Card
+                    cardTitle='React Youtube Clone'
+                    description='A youtube clone made with react and rapid api.'
+                    code='Code'
+                    githubLink='https://github.com/kurt-lo/react-youtube'
+                    githubIcon={<FaGithub size={20} />}
+                    live='Live'
+                    liveLink='https://react-youtube-rho.vercel.app/'
+                    liveIcon={<IoGlobeSharp size={20} />}
+                    videoDemo='Demo'
+                    videoDemoLink='https://www.youtube.com/watch?v=-Cg8HpHjK4Y'
+                    videoDemoIcon={<FaVideo  size={20} />}
+                >
+                    <>
+                        <FaReact size={20} className={iconClass} />
                         <SiTailwindcss size={20} className={iconClass} />
                     </>
                 </Card>
